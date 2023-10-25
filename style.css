@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.game {
+    background-color: #333;
+    min-height: 100vh;
+    padding: 0px 15px;
+    color: #fff;
+}
+
+.game > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    gap: 20px;
+}
+
+.game .btn {
+    all: unset;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.game >div:first-child p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+}
+
+@media (max-width: 550px) {
+    .game >div:first-child p {
+        font;
+    }
+}
+
+.game h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 80px;
+    line-height: 40px;
+}
+
+@media (max-width: 550px) {
+    .game h2 {
+        font-size: 20px;
+    }
+}
+
+.game > div:nth-child(2) {
+    position: relative;
+    border: 1px solid #fff;
+    background-color: red;
+    height: 200px;
+}
+
+.game hr {
+    border-top: 3px solid #fff;
+}
+
+.game .hiddenNum {
+    background-color: #fff;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    width: fit-content;
+    margin: 0px auto;
+    width: 100px;
+    height: 80px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+/* div 3 */
+.game > div:last-child {
+    max-width: 700px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.game > div:last-child .inputNum {
+    width: 100px;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    caret-color: #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game > div:last-child .inputNum:focus {
+    outline: 1px dotted #fff;
+}
+
+.game > div:last-child .btn {
+    display: block;
+    margin-top: 30px;
+}
+
+.game > div:last-child .btn:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.game > div:last-child p.msg {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    line-height: 35px;
+}
+
+.game > div:last-child h4:first-of-type {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.game > div:last-child h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
